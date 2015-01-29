@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Twelve 24 Design | Denver, Colorado | Resume</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/styles.css"></link>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src='js/scripts.js'></script>
+	</head>
+	<body>
+		<!--Nav-->
+		<nav id="mainNav">
+			<ul class="mainNav">
+				<li><a href="index.html">Home</a></li>
+				<li>Resume</li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="">Work</a>
+					<ul class="subNav">
+                        			<li><a href="print.html">Print</a></li>
+						<li><a href="identity.html">Identity</a></li>
+						<li><a href="interactive.html">Interactive</a></li>
+						<li><a href="photography.html">Photography</a></li>
+						<li><a href="packaging.html">Packaging</a></li>
+					</ul>
+				</li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<!--Header-->
+		<header>
+		</header>
+	
+		<!--CallOuts-->
+		<section id="leftBar">
+			<section class="leftBarCallout">
+				<h2>What I Know</h2>
+				<ul>
+					<li>Mac OS</li>
+					<li>Adobe CC
+						<ul>
+							<li>Acrobat</li>
+							<li>Illustrator</li>
+							<li>Photoshop</li>
+							<li>InDesign</li>
+							<li>Premiere</li>
+							<li>After Effects</li>
+							<li>Dreamweaver</li>
+							<li>Flash</li>
+							<li>Fireworks</li>
+						</ul>
+					</li>
+					<li>MS Office</li>
+					<li>Quark XPress</li>
+				</ul>
+			</section>
+
+			<section class="leftBarCallout">
+				<h2>Where I've Been</h2>
+				<p>I've had some pretty amazing volunteering experiences, from mentoring underpriveledged children to building houses after Hurricane Katrina to serving Christmas dinners to the homeless here in Denver. Giving back to my community is an activity in which I participate on a regular basis. I believe that experiences are the foundation for creativity.</p>
+			</section>
+
+			<section class="leftBarCallout">
+				<h2>What I Can Do</h2>
+				<p>Everyone has a different array of talents. My strengths lie in my anal retentiveness. I want every design, every layout, every printed piece to be exactly right. Not good enough or pretty darn close, but exactly right. I am one of the uncommon artists that also aced Chemistry, Calculus and Physics. I like things in order. My designs convey this. Even the edgy work is organized chaos. Clean aesthetics and a crisp feel are common amidst my work.</p>
+			</section>
+
+			<section class="leftBarCallout">
+				<h2>What Inspires Me</h2>
+				<p>Outside what I do for a living, which inspires me every day, I keep myself busy with a wild array of activities when I am not in front of a computer. From women's sand doubles to coed grass fours to women's hardcourt sixes, I play a lot of volleyball. It gave me my drive in college and it is still a passion of mine. I also am a knuckledragger on the peaks. I am partial to Breckenridge and even taught there for a few years. I play the piano; I can't read a lick of music, though, despite over a decade of lessons, but I can bang out just about anything by ear. And my Rottweiller and I love the outdoors. We hike parks and glaciers and love discovering hidden microbreweries afterwards.</p>
+			</section>
+		</section>
+
+		<!--Main-->
+		<main id="mainRight">
+			<h1 class="pageTitle">Resume</h1>
+			<section class="resumeSection">
+				<h2>Katherine Bundy</h2>
+				<p>757.343.9145</p>
+				<p>1972 S Macon Way, Aurora, CO 80014</p>
+			</section>
+
+			<section class="resumeSection">
+				<h2>
+					<span id="educationButton">
+						>
+					</span>
+					<script>
+						var educationButton = document.getElementById('educationButton');
+						var educationBlock = document.getElementById('educationBlock');
+						var visible = false;
+						educationButton.addEventListener('click', 
+							function (evt) {
+								if(visible==false) {
+									educationButton.classList.add('rotated');
+									educationBlock.classList.remove('collapsed');
+									visible = true;
+									else {
+										educationButton.classList.remove('rotated');
+										educationBlock.classList.add('collapsed');
+										visible = false;
+									}
+
+								}
+							}
+					</script>
+					 Education
+				</h2>
+				<div class="collapsed" id="educationBlock">
+					<p>Bachelor of Fine Arts in Graphic Design: James Madison University, Harrisonburg, VA</p>
+					<p>Masters in Web Development: University of Denver, Denver, CO</p>
+				</div>
+			</section>
+
+			<section class="resumeSection">
+				<h2>
+					<span id="experienceButton">
+						>
+					</span>
+					<script>
+						var experienceButton = document.getElementById('experienceButton');
+						var experienceBlock = document.getElementById('experienceBlock');
+						var visible = false;
+						experienceButton.addEventListener('click', 
+							function (evt) {
+								if(visible==false) {
+									experienceButton.classList.add('rotated');
+									experienceBlock.classList.remove('collapsed');
+									visible = true;
+									else {
+										experienceButton.classList.remove('rotated');
+										experienceBlock.classList.add('collapsed');
+										visible = false;
+									}
+
+								}
+							}
+					</script>
+					 Experience
+				</h2>
+				<div class="collapsed" id="experienceBlock">
+					<h3>2008–Present • Owner/Designer • Twelve 24 Design, LLC • Norfolk, VA to Denver, CO</h3>
+					
+					<p>Design corporate identity packages, a variety of print collateral (brochures, newsletters, advertisements, trade show banners, direct mail, rack cards, posters, etc...), web/interactive design (including Flash ads, animated GIFs, custom social media), photography, photo editing and packaging; set up and maintain SEO, moving clients to the top position in search engines; run all aspects of the business, including client communication, pre-press and printer correspondence, set/meet all deadlines, market and multitask in an ever-growing environment</p>
+
+					<ul class="jobHighlights">
+						<li>Redeveloped the identity &amp; redesigned the website for a bridal salon, resulting in a top placement in search engines, increasing their clientele exponentially and resulting in four consecutive “Best of” awards, Retailer of the Year award, a Bride’s Choice Award, local television interviews, a Best of Weddings award and a Top 50 Pick in Bride Magazine.</li>
+
+						<li>Redesigned the website for a high-end, Denver-based, hair salon, resulting in top search engine hits for the company’s choice keywords, numerous awards and a multi-million dollar investment interest based largely on the web redesign efforts</li>
+
+						<li>Designed a website for a million dollar residential property; it was previously on the market for a year. By maintaining the search engine optimization and ensuring the site was visible to the target audience, the property sold within 3 months with more showings in that time frame than the entire previous year</li>
+
+						<li>Redeveloped the brand, identity and website for a property management company with a more upscale, modern look, resulting in management contracts from higher-end properties, doubling their revenue</li>
+
+						<li>Created visible and unique web designs for numerous start-ups, from consulting firms to defense contractors to travel agencies and more, complementing their initial launch strategies with a strong online presence and resulting, in every case, in a significant amount of growth for each company</li>
+
+						<li>Developed a website for a city councilman’s re-election campaign, including updates on his voting history, political views and a place for supporters to donate to his campaign fund; he received more money during that campaign year than he had in any previous election years and, in addition, won the election</li>
+					</ul>
+
+
+					<h3>2006–2010 • Freelance Graphic Designer • Swimways Corporation • Va Beach, VA</h3>
+
+					<p>Build package design comps with chipboard, foam core, corrugated board, clam shells, and more; prepare packaging mock-ups for trade shows (Walmart, Sam’s Club, Target, etc.); extensive Photoshop work for packaging images; complete package redesign; product mock-up for unavailable items; troubleshoot POP displays; restructure package design to fit “green” packaging requirements</p>
+
+					<h3>2007–2009 • Art Director • CWB Advertising Agency • Newport News, VA</h3>
+
+					<p>Design logos, brochures, postcards, direct mail pieces, posters, magazine and newspaper advertisements, online Flash advertisements, web design, books, annual reports, promotional pieces, television storyboards, environmental signage, trade show booths, sales sheets, rack cards, billboards, invitations and package design; oversee projects from inception to completion; communicate directly with clients, printers, vendors; manage freelancers; complete pre-press knowledge including a variety of printing methods and extras, including custom dies; ability to adhere to strict deadlines, prioritize and multitask in a busy, agency environment</p>
+
+					<h3>2003–2007 • Graphic Designer • Coastal Training Technologies, Inc. • Va Beach, VA</h3>
+
+					<p>Design pamphlets, handbooks and labels to accompany training videos/DVDs in over 6 languages; direct and oversee projects with in-house designers at multiple offices, including art directing a design team in the Philippines; package design: DVD slips, VHS slips, disk face art; take digital stills during video shoots; retouch photos for book/pamphlet use; proofread text; pre-press preparation of files; communicate with printers
+
+					<h3>2005 • Graphic Designer • CASE, LLC • Norfolk, VA</h3>
+
+					<p>Design all print collateral, web design, logo development for government defense contractor; meet with clients; design and contract out bids for HQ conference room wall mural;site redesign; create training materials; prepare all presentation materials for contracts</p>
+
+					<h3>2002 • Graphic Designer • Sign Company • Va Beach, VA</h3>
+
+					<p>Letter removal/application on vehicles; aluminium sign lettering installation; vinyl banners; print/pre-press work; Sign-Cut Pro software designs; lettering/logo application to glass windows/doors</p>
+
+					<h3>2001 • Graphic Designer • The Mark-It • Harrisonburg, VA</h3>
+
+					<p>Screen printing design development; meeting client demands; apparel designs; image clean-up/image preparation/image creation for printing; burning screens; printing shirts</p>
+				</div>
+			</section>
+
+			<section class="resumeSection">
+				<h2>
+					<span id="volunteerButton">
+						>
+					</span>
+					<script>
+						var volunteerButton = document.getElementById('volunteerButton');
+						var volunteerBlock = document.getElementById('volunteerBlock');
+						var visible = false;
+						volunteerButton.addEventListener('click', 
+							function (evt) {
+								if(visible==false) {
+									volunteerButton.classList.add('rotated');
+									volunteerBlock.classList.remove('collapsed');
+									visible = true;
+									else {
+										volunteerButton.classList.remove('rotated');
+										volunteerBlock.classList.add('collapsed');
+										visible = false;
+									}
+
+								}
+							}
+					</script>
+					 Volunteer Work
+				</h2>
+				<div class="collapsed" id="volunteerBlock">
+					<ul>
+						<li>Pro Bono Web &amp; Graphic Designer/Event Committee Member DCAC Fundraising Benefit (2012)</li>
+							<p>Created all of the marketing materials, web design and more, in addition to organizing pro bono printing, for the Walk on the Wild Side Denver Children’s Advocacy Center Benefit at Exdo Center on 10/7/12, resulting in over $100,000 raised for the nonprofit</p>
+
+						<li>Big Brother Big Sister Mentor Program (1999–2002; 2004–2006)</li>
+						<p>Had a little brother for both timeframes in the program - first one was age 6 until he was 9; second one was age 9 until he was 11. Met with each once a week to take them out for activities, help them with homework, provide a role model, etc...</p>
+
+						<li>VSDB (Virginia School for the Deaf &amp; Blind) Volunteer (2000–2002)</li>
+						<p>Worked with deaf children at the school once a week; developed my ASL in the process of being a role model for the kids. We would go out and do activities; stay in and do their school work, etc...</p>
+
+						<li>Epworth Foundation Thanksgiving Drive (2010)</li>
+						<li>Boys &amp; Girls Club Adopt-a-Family (2001, 2002, 2005, 2009)</li>
+						<li>Backpacks for Kids (2009)</li>
+						<li>Washington, DC Help the Homeless Walk (1993-1997)</li>
+					</ul>
+				</div>
+			</section>
+			<section class="resumeSection">
+				<h2>
+					<span id="awardsButton">
+						>
+					</span>
+					<script>
+						var awardsButton = document.getElementById('awardsButton');
+						var awardsBlock = document.getElementById('awardsBlock');
+						var visible = false;
+						awardsButton.addEventListener('click', 
+							function (evt) {
+								if(visible==false) {
+									awardsButton.classList.add('rotated');
+									awardsBlock.classList.remove('collapsed');
+									visible = true;
+									else {
+										awardsButton.classList.remove('rotated');
+										awardsBlock.classList.add('collapsed');
+										visible = false;
+									}
+
+								}
+							}
+					</script>
+					 Recognitions &amp; Publications
+				</h2>
+				<div class="collapsed" id="awardsBlock">
+					<ul>
+						<li>American Corporate Identity Logo Publication</li>
+						<li>International Award: AIGA World Day of Design Poster (Piece in International Traveling Exhibit)</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+		</footer>
+	</body>
+</html>
