@@ -248,7 +248,7 @@ h3 {
 }
 
 .collapsed {
-	display:hidden;
+	display:none;
 }
 
 .rotated {
