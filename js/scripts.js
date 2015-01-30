@@ -1,4 +1,4 @@
-var header = getElementsByTagName('header');
+var header = document.getElementsByTagName('header')[0];
 header.classList.add('headerContainer');
 
 var imgHeader = document.createElement('img');
@@ -19,7 +19,7 @@ pSectionHeader.classList.add('quote');
 pSectionHeader.textContent = "Good advertising penetrates the public mind with desires and beliefs. –Leo Burnett";
 sectionHeader.appendChild(pSectionHeader);
 
-var footer = getElementsByTagName('footer');
+var footer = document.getElementsByTagName('footer')[0];
 var spanFooter1 = document.createElement('span');
 spanFooter1.classList.add('footer');
 spanFooter1.textContent = "Copyright ©2015 Twelve 24 Design • All rights reserved. • 757.343.9145 • 1972 S. Macon Way • Aurora, CO • 80014 • ";

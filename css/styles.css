@@ -252,11 +252,14 @@ h3 {
 }
 
 .rotated {
-	transform:rotate(90);
+	-webkit-transform:rotate(90deg);
+	transition: all .2s;
 }
 
 span {
+	display: inline-block;
 	cursor: pointer;
+	transition: all .2s;
 }
 
 

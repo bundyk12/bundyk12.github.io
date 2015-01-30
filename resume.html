@@ -5,7 +5,7 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="css/styles.css"></link>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-		<script type="text/javascript" src='js/scripts.js'></script>
+		
 	</head>
 	<body>
 		<!--Nav-->
@@ -82,25 +82,6 @@
 				<p>1972 S Macon Way, Aurora, CO 80014</p>
 			</section>
 
-			<script>
-				var expandButton = document.getElementByClass('expandButton');
-				var expandBlock = document.getElementByClass('expandBlock');
-				var visible = false;
-				expandButton.addEventListener('click', 
-					function (evt) {
-						if(visible) {
-							expandButton.classList.remove('rotated');
-							expandBlock.classList.add('collapsed');
-							visible = false;
-							else {
-								expandButton.classList.add('rotated');
-								expandBlock.classList.remove('collapsed');
-								visible = true;
-							}
-						}
-					};
-			</script>
-
 			<section class="resumeSection">
 				<h2>
 					<span class="expandButton">
@@ -116,7 +97,7 @@
 
 			<section class="resumeSection">
 				<h2>
-					<span id="expandButton">
+					<span class="expandButton">
 						>
 					</span>
 					 Experience
@@ -169,7 +150,7 @@
 
 			<section class="resumeSection">
 				<h2>
-					<span id="expandButton">
+					<span class="expandButton">
 						>
 					</span>
 					 Volunteer Work
@@ -194,7 +175,7 @@
 			</section>
 			<section class="resumeSection">
 				<h2>
-					<span id="expandButton">
+					<span class="expandButton">
 						>
 					</span>
 					 Recognitions &amp; Publications
@@ -208,7 +189,23 @@
 			</section>
 		</main>
 
+			<script>
+				var expandButton = document.getElementsByClassName('expandButton');
+				var expandBlock = document.getElementsByClassName('expandBlock');
+
+				for (var i = expandButton.length - 1; i >= 0; i--) {
+					expandButton[i].addEventListener('click', function (evt) {
+						evt.target.classList.toggle('rotated');
+						evt.target.parentElement.nextElementSibling.classList.toggle('collapsed')
+					});
+				};
+
+				
+			</script>
+
+
 		<footer>
 		</footer>
+		<script type="text/javascript" src='js/scripts.js'></script>
 	</body>
 </html>
