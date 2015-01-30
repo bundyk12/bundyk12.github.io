@@ -20,24 +20,28 @@ pSectionHeader.textContent = "Good advertising penetrates the public mind with d
 sectionHeader.appendChild(pSectionHeader);
 
 var footer = document.getElementsByTagName('footer')[0];
+var pFooter = document.createElement('p');
+pFooter.classList.add('footer');
+footer.appendChild(pFooter);
+
 var spanFooter1 = document.createElement('span');
 spanFooter1.classList.add('footer');
-spanFooter1.textContent = "Copyright ©2015 Twelve 24 Design • All rights reserved. • 757.343.9145 • 1972 S. Macon Way • Aurora, CO • 80014 • ";
-footer.appendChild(spanFooter1);
+spanFooter1.textContent = "Copyright ©2015 Twelve 24 Design • All rights reserved. • 757.343.9145 • 1972 S. Macon Way • Aurora, CO • 80014 •";
+pFooter.appendChild(spanFooter1);
 
 var aEmail = document.createElement('a');
-aEmail.classList.add('footer');
+aEmail.classList.add('footerLink');
 aEmail.setAttribute('href', 'mailto:kb@twelve24design.com');
-aEmail.textContent = "E-mail Us";
-footer.appendChild(aEmail);
+aEmail.textContent = " E-mail Us ";
+pFooter.appendChild(aEmail);
 
 var spanFooter2 = document.createElement('span');
 spanFooter2.classList.add('footer');
 spanFooter2.textContent = " • "
-footer.appendChild(spanFooter2);
+pFooter.appendChild(spanFooter2);
 
 var aTerms = document.createElement('a');
-aTerms.classList.add('footer');
+aTerms.classList.add('footerLink');
 aTerms.setAttribute('href', 'terms.html');
-aTerms.textContent = "Terms of Use";
-footer.appendChild(aTerms);
+aTerms.textContent = " Terms of Use";
+pFooter.appendChild(aTerms);
