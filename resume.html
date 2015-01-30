@@ -93,18 +93,17 @@
 						var visible = false;
 						educationButton.addEventListener('click', 
 							function (evt) {
-								if(visible==false) {
-									educationButton.classList.add('rotated');
-									educationBlock.classList.remove('collapsed');
-									visible = true;
+								if(visible) {
+									educationButton.classList.remove('rotated');
+									educationBlock.classList.add('collapsed');
+									visible = false;
 									else {
-										educationButton.classList.remove('rotated');
-										educationBlock.classList.add('collapsed');
-										visible = false;
+										educationButton.classList.add('rotated');
+										educationBlock.classList.remove('collapsed');
+										visible = true;
 									}
-
 								}
-							}
+							};
 					</script>
 					 Education
 				</h2>
