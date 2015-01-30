@@ -252,7 +252,7 @@ h3 {
 }
 
 .rotated {
-	transform:rotate(-90);
+	transform:rotate(90);
 }
 
 span {
