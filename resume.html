@@ -82,32 +82,33 @@
 				<p>1972 S Macon Way, Aurora, CO 80014</p>
 			</section>
 
+			<script>
+				var expandButton = document.getElementByClass('expandButton');
+				var expandBlock = document.getElementByClass('expandBlock');
+				var visible = false;
+				expandButton.addEventListener('click', 
+					function (evt) {
+						if(visible) {
+							expandButton.classList.remove('rotated');
+							expandBlock.classList.add('collapsed');
+							visible = false;
+							else {
+								expandButton.classList.add('rotated');
+								expandBlock.classList.remove('collapsed');
+								visible = true;
+							}
+						}
+					};
+			</script>
+
 			<section class="resumeSection">
 				<h2>
-					<span id="educationButton">
+					<span class="expandButton">
 						>
 					</span>
-					<script>
-						var educationButton = document.getElementById('educationButton');
-						var educationBlock = document.getElementById('educationBlock');
-						var visible = false;
-						educationButton.addEventListener('click', 
-							function (evt) {
-								if(visible) {
-									educationButton.classList.remove('rotated');
-									educationBlock.classList.add('collapsed');
-									visible = false;
-									else {
-										educationButton.classList.add('rotated');
-										educationBlock.classList.remove('collapsed');
-										visible = true;
-									}
-								}
-							};
-					</script>
 					 Education
 				</h2>
-				<div class="collapsed" id="educationBlock">
+				<div class="collapsed" id="expandBlock">
 					<p>Bachelor of Fine Arts in Graphic Design: James Madison University, Harrisonburg, VA</p>
 					<p>Masters in Web Development: University of Denver, Denver, CO</p>
 				</div>
@@ -115,31 +116,12 @@
 
 			<section class="resumeSection">
 				<h2>
-					<span id="experienceButton">
+					<span id="expandButton">
 						>
 					</span>
-					<script>
-						var experienceButton = document.getElementById('experienceButton');
-						var experienceBlock = document.getElementById('experienceBlock');
-						var visible = false;
-						experienceButton.addEventListener('click', 
-							function (evt) {
-								if(visible==false) {
-									experienceButton.classList.add('rotated');
-									experienceBlock.classList.remove('collapsed');
-									visible = true;
-									else {
-										experienceButton.classList.remove('rotated');
-										experienceBlock.classList.add('collapsed');
-										visible = false;
-									}
-
-								}
-							}
-					</script>
 					 Experience
 				</h2>
-				<div class="collapsed" id="experienceBlock">
+				<div class="collapsed" id="expandBlock">
 					<h3>2008–Present • Owner/Designer • Twelve 24 Design, LLC • Norfolk, VA to Denver, CO</h3>
 					
 					<p>Design corporate identity packages, a variety of print collateral (brochures, newsletters, advertisements, trade show banners, direct mail, rack cards, posters, etc...), web/interactive design (including Flash ads, animated GIFs, custom social media), photography, photo editing and packaging; set up and maintain SEO, moving clients to the top position in search engines; run all aspects of the business, including client communication, pre-press and printer correspondence, set/meet all deadlines, market and multitask in an ever-growing environment</p>
@@ -187,31 +169,12 @@
 
 			<section class="resumeSection">
 				<h2>
-					<span id="volunteerButton">
+					<span id="expandButton">
 						>
 					</span>
-					<script>
-						var volunteerButton = document.getElementById('volunteerButton');
-						var volunteerBlock = document.getElementById('volunteerBlock');
-						var visible = false;
-						volunteerButton.addEventListener('click', 
-							function (evt) {
-								if(visible==false) {
-									volunteerButton.classList.add('rotated');
-									volunteerBlock.classList.remove('collapsed');
-									visible = true;
-									else {
-										volunteerButton.classList.remove('rotated');
-										volunteerBlock.classList.add('collapsed');
-										visible = false;
-									}
-
-								}
-							}
-					</script>
 					 Volunteer Work
 				</h2>
-				<div class="collapsed" id="volunteerBlock">
+				<div class="collapsed" id="expandBlock">
 					<ul>
 						<li>Pro Bono Web &amp; Graphic Designer/Event Committee Member DCAC Fundraising Benefit (2012)</li>
 							<p>Created all of the marketing materials, web design and more, in addition to organizing pro bono printing, for the Walk on the Wild Side Denver Children’s Advocacy Center Benefit at Exdo Center on 10/7/12, resulting in over $100,000 raised for the nonprofit</p>
@@ -231,31 +194,12 @@
 			</section>
 			<section class="resumeSection">
 				<h2>
-					<span id="awardsButton">
+					<span id="expandButton">
 						>
 					</span>
-					<script>
-						var awardsButton = document.getElementById('awardsButton');
-						var awardsBlock = document.getElementById('awardsBlock');
-						var visible = false;
-						awardsButton.addEventListener('click', 
-							function (evt) {
-								if(visible==false) {
-									awardsButton.classList.add('rotated');
-									awardsBlock.classList.remove('collapsed');
-									visible = true;
-									else {
-										awardsButton.classList.remove('rotated');
-										awardsBlock.classList.add('collapsed');
-										visible = false;
-									}
-
-								}
-							}
-					</script>
 					 Recognitions &amp; Publications
 				</h2>
-				<div class="collapsed" id="awardsBlock">
+				<div class="collapsed" id="expandBlock">
 					<ul>
 						<li>American Corporate Identity Logo Publication</li>
 						<li>International Award: AIGA World Day of Design Poster (Piece in International Traveling Exhibit)</li>
