@@ -1,6 +1,6 @@
 /*This will be the stylesheet for my site*/
 body {
-	background-image: url('file:///Users/KB/Desktop/AWD Site/assignment1/images/header4.jpg');
+	background-image: url('../images/header4.jpg');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
